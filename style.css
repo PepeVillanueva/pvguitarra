@@ -1,0 +1,237 @@
+/* RESET BÁSICO */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* CONTENEDOR GENERAL */
+.section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  background: url("img/foto-guitarra.jpg") center/cover no-repeat;
+  background-position: center 30%;
+  color: white;
+  padding: 100px 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.85) 0%,
+    rgba(0,0,0,0.7) 50%,
+    rgba(0,0,0,0.2) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  white-space: pre-line; /* reemplaza <br> */
+}
+
+.hero-note {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+
+/* BOTÓN WHATSAPP */
+.btn-wa {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn-wa:hover {
+  opacity: 0.9;
+}
+
+/* MAIN */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* INTRO */
+.intro {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* METODO */
+.metodo {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.metodo h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.metodo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* PRECIOS */
+.precios {
+  background: #111;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.precios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.precio-card {
+  background: #222;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.precio-card.destacado {
+  border: 2px solid #25D366;
+  transform: scale(1.05);
+}
+
+.badge {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.precio {
+  font-size: 28px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.precios h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.precios-note {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.precios-btn {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* HORARIO */
+.horario {
+  text-align: center;
+}
+
+/* CONTACTO */
+.contacto {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  max-width: 500px;
+}
+
+.email {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.sobre-mi {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.ubicacion {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.mapa {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #666;
+}
