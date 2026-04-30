@@ -303,6 +303,19 @@ footer {
   display: block;
 }
 
+.instagram {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.instagram a,
+footer a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
 /* AJUSTES MÓVIL */
 @media (max-width: 600px) {
   :root {
